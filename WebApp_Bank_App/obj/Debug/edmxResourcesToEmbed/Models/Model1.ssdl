@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BankingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Acc_Tb">
+    <Key>
+      <PropertyRef Name="acc_id" />
+    </Key>
+    <Property Name="acc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="acc_no" Type="nvarchar" MaxLength="50" />
+    <Property Name="amt" Type="float" />
+  </EntityType>
+  <EntityType Name="Customer_Tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date_of_birth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Acc_number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Money" Type="float" />
+  </EntityType>
+  <EntityType Name="Deposite_Tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Accnumber" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="OldBalance" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DepAmount" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Login_Tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Register_Tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Transefer_Tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Acc_Number" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Balance" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Totransefer" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="User_Account">
+    <Key>
+      <PropertyRef Name="Account_Num" />
+    </Key>
+    <Property Name="Account_Num" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DDB" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone_Num" Type="nvarchar" MaxLength="50" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" />
+    <Property Name="Picture" Type="image" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Social status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Balance" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="BankingModelStoreContainer">
+    <EntitySet Name="Acc_Tb" EntityType="Self.Acc_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer_Tb" EntityType="Self.Customer_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deposite_Tb" EntityType="Self.Deposite_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login_Tb" EntityType="Self.Login_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register_Tb" EntityType="Self.Register_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transefer_Tb" EntityType="Self.Transefer_Tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Account" EntityType="Self.User_Account" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

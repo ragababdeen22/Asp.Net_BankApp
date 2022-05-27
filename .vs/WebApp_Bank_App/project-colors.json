@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "88b0fe57-1854-4ce3-bddb-f6376525a577": {
+      "ProjectGuid": "88b0fe57-1854-4ce3-bddb-f6376525a577",
+      "DisplayName": "WebApp_Bank_App",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "e0b82f85-abb5-4ae2-8ea5-2920b7549ec8": {
+      "ProjectGuid": "e0b82f85-abb5-4ae2-8ea5-2920b7549ec8",
+      "DisplayName": "TestProject1",
+      "ColorIndex": 1
+    },
+    "b99a6161-680e-41dc-beff-c5daf03d7113": {
+      "ProjectGuid": "b99a6161-680e-41dc-beff-c5daf03d7113",
+      "DisplayName": "TestProject2",
+      "ColorIndex": 2
+    },
+    "e8189e04-29e6-469a-9afe-45fafa114a48": {
+      "ProjectGuid": "e8189e04-29e6-469a-9afe-45fafa114a48",
+      "DisplayName": "TestProject3",
+      "ColorIndex": 3
+    },
+    "4ca1b3f3-865d-4691-9559-c27533345880": {
+      "ProjectGuid": "4ca1b3f3-865d-4691-9559-c27533345880",
+      "DisplayName": "TestProject4",
+      "ColorIndex": 4
+    },
+    "eb2e2e49-7427-4314-810a-d7f3b3711d35": {
+      "ProjectGuid": "eb2e2e49-7427-4314-810a-d7f3b3711d35",
+      "DisplayName": "UnitTestProject1",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
